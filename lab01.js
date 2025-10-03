@@ -13,10 +13,25 @@ let urer1 = new User('Arpi', 21);
 let user2 = new User('Monika', 5);
 console.log(urer1);
 
-let  date1 = new Date();
+// let  date1 = new Date();
 
 
-class User{
-
-
+class User {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    logInfo() {
+        console.log(`Information: ${this.name}, ${this.name}`);
+    }
+    getSystemErrorName() {
+        return this.name;
+    }
+    getAge() {
+        return this.age;
+    }
 }
+
+let userName = new User('Arpi', 21);
+
+userName.logInfo();
